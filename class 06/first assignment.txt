@@ -1,0 +1,11 @@
+first assignment
+firstName
+lastName
+email
+password
+gender
+hobbies
+country
+date of birth DOB
+profile
+contact number
