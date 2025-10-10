@@ -1,0 +1,63 @@
+/* element name */
+/* h1 {
+    color: red;
+    background-color: blue;
+} */
+
+/* id => # */
+/* #heading1{
+     color: red;
+    background-color: blue;
+}
+
+#heading4{
+    color: white;
+    background-color: black;
+} */
+
+/* class => dot(.) */
+
+/* .heading  {
+    color: blue;
+} */
+
+
+
+/* 
+.heading{
+    color: red;
+} */
+
+
+
+.head1 {
+    /* color: blue;   color name */
+    /* color: rgb(62, 13, 62); */
+    /* color: hex code; */
+    /* color: #412B6B; */
+    /* color: rgb(142, 237, 221); */
+    /* color: #ed8ea3; */
+
+
+    /* color: hsl(23, 73%, 74%); */
+    /* color: #0866FF; //fb */
+    /* color: #1E64D4; */
+    /* background-color: #42b72a; */
+
+    /* background-color: black; */
+    /* color: red; */
+    /* opacity: 0.7; 0.1  0.9  */
+
+    background-color: rgba(255, 0, 0, 0.5);
+
+
+}
+
+
+.para1{
+    font-size:  32px ;
+    font-weight: bold;
+    font-style:italic ;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+}
