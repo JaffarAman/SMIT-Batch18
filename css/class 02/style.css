@@ -1,0 +1,78 @@
+/* h1{
+    color: red;
+} */
+
+
+/* tag/type selector */
+/* p   {
+
+} */
+
+/* id selector */
+/* #id{
+
+} */
+
+
+/* class selector */
+/* .class{
+
+} */
+
+.para {
+    color: purple;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.para2 {
+    color: red;
+}
+
+.paraSpan{
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: red underline  ;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.saylaniH1{
+    text-align: center;
+}
+
+.para3{
+    /* line-height: 40px;
+    word-spacing: 20px;
+    letter-spacing: 10px; */
+    /* text-decoration: overline; */
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+    /* text-decoration: line-through; */
+}
+
+/* .paraStrike{
+    text-decoration: line-through red dotted ; 
+}
+
+.newPara{
+    text-align: justify;
+} */
+
+
+#parashadow{
+    text-shadow: -2px -10px 5px  black ;
+    /* border-width: 2px ;
+    border-style: dotted ;
+    border-color: red; */
+    /* border: 1px solid black ; */
+    border: #000  2px solid ;
+}
