@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* h1{
+    color: red;
+} */
+
+
+.list {
+    /* list-style: none; */
+    /* list-style-type: none; */
+
+}
+
+
+.list li {
+    border: 1px solid red;
+    margin: 10px 0;
+    list-style-position: inside;
+}
+
+
+.myTable {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 18px;
+    empty-cells: hide;
+}
+
+.myTable tr {
+    /* border: 1px solid red; */
+    /* background-color: red; */
+
+    margin: 20px 0;
+    padding: 50px 0;
+
+}
+
+.myTable td {
+    /* border: 1px solid purple; */
+    /* background-color: purple; */
+    border: 1px solid black;
+    /* margin: 50px; */
+    /* padding: 50px; */
+}
+
+.myTable2 {
+    border: 1px solid black;
+    width: 100%;
+    /* margin: 20px; */
+    border-collapse: collapse;
+}
+
+.parent {
+    padding: 20px;
+}
+
+.myTable2 td {
+    border: 1px solid black;
+}
+
+.headingCol {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    background-color: grey;
+}
+
+/* .myTable2 thead tr td{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+} */
+
+.myTable2 td {
+    padding: 16px;
+    font-size: 28px;
+}
+
+.myTable2 tbody td{
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+.myTable2 tbody td:hover{
+    background-color: lightblue;
+}
+
+.btn{
+    background-color: red;
+}
+
+.btn:hover{
+    background-color: blue;
+    color: white;
+}

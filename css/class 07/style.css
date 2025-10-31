@@ -1,0 +1,156 @@
+/* .heading {
+    border-left: 1px solid red;
+    border-top: 1px solid blue;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+} */
+
+
+/* div{
+    background-color: red;
+} */
+
+
+/* * {
+    color: purple;
+}
+
+#divID {}
+
+.div {} */
+
+
+
+/* child selector */
+/* .box1 > p{
+    color: red;
+} */
+
+
+/* Descendant Selector */
+/* .box1 p{
+    color: purple;
+} */
+
+/* .para1 {
+    color: red;
+}
+
+.para2 {
+    color: blue;
+}
+
+.para3 {
+    color: green;
+} */
+
+/* .para1,
+.para2,
+.para3 {
+    background-color: black;
+} */
+
+
+
+/* .para1{
+    color: red;
+    background-color: black;
+}
+
+
+.para1{
+    color: blue;
+} */
+
+
+
+/* .para1 {
+    color: blue;
+}
+
+#p1 {
+    color: aqua;
+}
+
+p {
+    color: purple;
+    background-color: black;
+} */
+
+/* .loginBtn {
+    width: 180px;
+    padding: 16px;
+    border-radius: 16px;
+    border: none;
+    background-color: lightskyblue;
+    color: black;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.6s ease;
+} */
+
+/* .loginBtn:hover { */
+/* background-color: blue; */
+/* width: 80%; */
+/* } */
+
+
+/* .pSpan{
+    color: red;
+    font-size: 28px;
+} */
+
+/* .para10::first-line{
+    color: red;
+    font-size: 28px;
+}
+
+.para10::first-letter{
+    color: purple;
+} */
+
+
+input:focus {
+    background-color: lightgrey;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+a:active {
+    color: aqua;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* top: 50px;
+    left: 50px; */
+    /* left: 100px;
+    top: 100px; */
+    /* left: ;
+    right: ;
+    top: ;
+    bottom: ; */
+}
+
+.box3 {
+    background-color: blue;
+}
