@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* h1{
+    color: red;  
+}
+
+h1{
+    color: blue;
+} */
+
+
+
+.heading {
+    color: purple;
+}
+
+h1 {
+    color: red;
+}
+
+
+#hId {
+    color: blue;
+}
+
+/* child selector */
+.box1>p {
+    color: blue;
+}
+
+
+.box1 p {
+    color: blue;
+}
+
+
+.box20 {
+    background-color: green;
+    /* position: relative; */
+    /* position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; */
+    /* top: 0; */
+    /* left: 50px; */
+    /* top: ; */
+    /* left: ; */
+    /* right: ; */
+    /* bottom: ; */
+
+
+
+    /* position: absolute; */
+    /* position: fixed;
+    bottom: 30px;
+    right: 30px; */
+
+
+}
+
+.box30 {
+    background-color: blue;
+
+}
+
+.header {
+    /* position: fixed;
+    top: 0; */
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+
+.box100 {
+    background-color: red;
+}
+
+
+.box200 {
+    background-color: green;
+
+}
+
+.box300 {
+    background-color: blue;
+
+}
+
+.parent{
+    /* display: flex;
+    justify-content: center; */
+
+
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    gap: 20px;
+}

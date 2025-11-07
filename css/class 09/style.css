@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    /* height: 100vh ; */
+    border: 1px solid black;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    /* align-items: center; */
+
+
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    /* justify-content: end; */
+    /* flex-wrap: wrap; */
+}
+
+
+
+.box1 {
+    background-color: red;
+    width: 200px;
+    /* flex: 1; */
+    /* order: 2; */
+    flex-shrink: 2;
+}
+
+.box2 {
+    background-color: green;
+    width: 200px;
+    flex-shrink: 1;
+    /* flex: 3; */
+
+    /* flex: 1; */
+    /* order: 1; */
+
+}
+
+.box3 {
+    background-color: blue;
+    flex-shrink: 1;
+    width: 200px;
+    /* flex: 1; */
+    /* order: 3; */
+
+}
+
+.box4 {
+    background-color: purple;
+    /* width: 200px; */
+}
+
+.newParent {
+    height: 100vh;
+    border: 2px solid black;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: ; */
+
+
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.box100 {
+    background-color: red;
+}
+
+.box200 {
+    background-color: green;
+    align-self: flex-start;
+}
+
+.box300 {
+    background-color: blue;
+}
+
+
+
+.header {
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 250px;
+    height: 68px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon{
+    display: flex;
+    gap: 20px;
+}
+
+.formsOption ul{
+    margin-top: 10px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+.formsOption ul li{
+    color: #0d6db7;
+    background-color: #fafafa;
+    padding: 8px;
+}
+
+.inputCOntainer{
+    border: 1px solid green;
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.inputCOntainer input{
+    flex:  1;
+}
