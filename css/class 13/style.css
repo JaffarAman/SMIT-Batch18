@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.myModal .modal-dialog {
+    /* width: 50%; */
+    min-width: 70%;
+
+}
+
+
+.myInput {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.itemBox {
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemBox img {
+    width: 88px;
+    height: 88px;
+}
+
+.itemBox p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.parent {
+    display: flex;
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.box1 {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    position: relative;
+    z-index: 1;
+}
+
+
+.box2 {
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
