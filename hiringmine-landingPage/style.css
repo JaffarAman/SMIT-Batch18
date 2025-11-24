@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+body {
+    background-image: linear-gradient(180deg, #212126 0%, #212126 69.79%, #212126 99.99%, #212126 100%);
+    color: white;
+}
+
+.header {
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+}
+
+.logo img {
+    width: 186px;
+    height: 36px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.switchIcon span {
+    font-size: 32px;
+    color: white;
+}
+
+.postJobBtn {
+    color: #6851ff !important;
+    font-weight: bold;
+}
+
+
+.heroSection {
+    /* border: 1px solid white; */
+    margin-top: 30px;
+    padding: 16px;
+
+}
+
+.heroSection h1 {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+
+.webSwitch {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    /* width: 350px; */
+    margin: 0 auto;
+    padding: 6px;
+    width: max-content;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.6s ease;
+
+}
+
+.webSwitch:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(104, 81, 255, 0.3) 0px 12px 40px;
+}
+
+.webSwitch button {
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 40px;
+    /* background-color: #bb86fc; */
+    background-color: #522fd4;
+    color: white;
+    font-weight: bold;
+}
+
+.applyBtn {
+    background-color: transparent !important;
+    color: #ffffffb3 !important;
+}
+
+.heroSection .desc {
+    /* color: #fff; */
+    /* border: 1px solid red;
+    text-align: center;
+    width: 60%;
+    margin: 30px auto; */
+    /* border: 1px solid red; */
+    width: 55%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+.findTalentBtn {
+    width: 140px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    background: linear-gradient(135deg, rgb(0, 168, 204), rgb(0, 151, 230));
+}
+
+.roles {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roles h2 {
+    color: #522fd4;
+}
+
+.tabParent {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+}
+
+.roles .tab {
+    border: 1px solid #522fd4;
+    padding: 4px 12px;
+    border-radius: 8px;
+    width: max-content;
+}
+
+.tab p {
+    margin: 0;
+    font-size: 14px;
+    color: #522fd4;
+    font-weight: bold;
+}
+
+.centerLayout {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.agentUi {
+    /* border: 1px solid red; */
+    margin-top: 20px;
+}
+
+.agentUi h1 {
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+
+}
+
+
+.chatBox {
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-top: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatBoxheader {
+    border-bottom: 1px solid white;
+    padding: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.chatBoxheader i {
+    color: #522fd4;
+}
+
+.chatBoxheader p {
+    margin: 0;
+}
+
+.chatBoxBody {
+    padding: 24px;
+    border-bottom: 1px solid white;
+    flex: 8;
+
+}
+
+.chatBoxBody p{
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+    width: 60%;
+    padding: 24px;
+    border-radius: 20px;
+
+}
+
+.chatBoxFooter {
+    padding: 8px;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+
+.chatBoxFooter input {
+    display: block;
+    width: 95%;
+    border: none;
+    outline: none;
+    border: 1px solid  rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    padding: 0 16px;
+    border-radius: 8px;
+    color: white;
+}
+
+.chatBoxFooter .sendBtn {
+        width: 5%;
+        background-color: #522fd4;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        cursor: pointer;
+        
+}
+.quickStepContainer{
+    margin-top: 50px;
+}
+.stepCard{
+    border: 1px solid white;
+    /* width: 250px; */
+    text-align: center;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+
+.rotate-center {
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+}
+
+
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
