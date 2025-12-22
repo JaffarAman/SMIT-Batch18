@@ -99,6 +99,11 @@
 
 
 
-p1
-p5
-percentage = (obt / total) * 100
+// p1
+// p5
+// percentage = (obt / total) * 100
+
+
+
+var htmlScore = prompt("enter html score")
+console.log(htmlScore)
