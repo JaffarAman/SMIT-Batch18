@@ -49,3 +49,13 @@
     cursor: pointer;
     width: 120px;
 }
+
+/* 
+li{
+    pointer-events: visible;
+} */
+
+
+.reportCardContainer{
+    display: none;
+}

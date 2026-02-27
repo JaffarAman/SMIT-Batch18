@@ -28,13 +28,20 @@
         </div>
         
         <div class="footer" >
-            <p> 1 / 10</p>
-            <button onclick="nextQuestion()" >Next</button>
+            <p id="quizProgress" > 1 / 10</p>
+            <button  disabled  id="nextQuesBtn" onclick="nextQuestion()" >Next</button>
         </div>
 
 
     </div>
 
+    <div class="reportCardContainer" >
+            <h1>Report Card</h1>
+            <p>Total Question: 100</p>
+            <p id="correctPara" ></p>
+            <p>Wrong Answer: 100</p>
+            <p>Grade: 100</p>
+    </div>
 
 </body>
 <script src="app.js"></script>
