@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <header>
+        <h1>📝 Todo Dashboard</h1>
+        <button class="logout-btn">Logout</button>
+    </header>
+
+    <!-- Create Todo -->
+    <section class="todo-form">
+        <h2>Create New Todo</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Todo Title"
+                required
+            >
+
+            <textarea
+                placeholder="Description"
+                rows="4"
+            ></textarea>
+
+            <div class="row">
+
+                <select>
+                    <option>Low Priority</option>
+                    <option>Medium Priority</option>
+                    <option>High Priority</option>
+                </select>
+
+                <input type="date">
+
+            </div>
+
+            <button type="submit">
+                + Add Todo
+            </button>
+
+        </form>
+    </section>
+
+    <!-- Todo List -->
+    <section class="todo-list">
+
+        <div class="list-header">
+            <h2>My Todos</h2>
+
+            <input
+                type="search"
+                placeholder="Search Todo..."
+            >
+        </div>
+
+        <div class="todo-card">
+
+            <div class="todo-content">
+                <h3>Finish Dashboard UI</h3>
+                <p>Create responsive dashboard using HTML & CSS.</p>
+
+                <div class="meta">
+                    <span class="priority high">High</span>
+                    <span>📅 20 July 2026</span>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </div>
+
+        </div>
+
+        <div class="todo-card">
+
+            <div class="todo-content">
+                <h3>Study JavaScript</h3>
+                <p>Learn DOM Manipulation and Events.</p>
+
+                <div class="meta">
+                    <span class="priority medium">Medium</span>
+                    <span>📅 25 July 2026</span>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>

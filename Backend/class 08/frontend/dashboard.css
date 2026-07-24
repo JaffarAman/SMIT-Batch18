@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:30px;
+}
+
+.dashboard{
+    max-width:1100px;
+    margin:auto;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    color:#333;
+}
+
+.logout-btn{
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.logout-btn:hover{
+    background:#d93636;
+}
+
+/* Cards */
+
+.todo-form,
+.todo-list{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.todo-form h2,
+.todo-list h2{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Form */
+
+form input,
+form textarea,
+form select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.row{
+    display:flex;
+    gap:15px;
+}
+
+.row select,
+.row input{
+    flex:1;
+}
+
+form button{
+    width:100%;
+    padding:14px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#3b9440;
+}
+
+/* List */
+
+.list-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.list-header input{
+    width:250px;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* Todo Card */
+
+.todo-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:18px;
+    margin-bottom:15px;
+}
+
+.todo-content h3{
+    margin-bottom:8px;
+}
+
+.todo-content p{
+    color:#666;
+    margin-bottom:12px;
+}
+
+.meta{
+    display:flex;
+    gap:15px;
+    font-size:14px;
+}
+
+.priority{
+    color:white;
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.high{
+    background:#e74c3c;
+}
+
+.medium{
+    background:#f39c12;
+}
+
+.low{
+    background:#2ecc71;
+}
+
+/* Buttons */
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.edit,
+.delete{
+    border:none;
+    color:white;
+    padding:8px 15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.edit{
+    background:#3498db;
+}
+
+.delete{
+    background:#e74c3c;
+}
+
+.edit:hover{
+    background:#217dbb;
+}
+
+.delete:hover{
+    background:#c0392b;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header,
+.list-header,
+.todo-card,
+.row{
+    flex-direction:column;
+    align-items:stretch;
+}
+
+.list-header input{
+    width:100%;
+    margin-top:15px;
+}
+
+.actions{
+    margin-top:15px;
+}
+
+}
