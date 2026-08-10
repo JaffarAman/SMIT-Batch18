@@ -1,0 +1,35 @@
+Backend Topics
+Nodejs
+v8 engine
+http
+PORT
+modules - (fs , http)
+url
+FS
+npm init
+package.json
+express
+nodemon or --watch
+endpoints (/login  , /signUp)
+method ( POST, PUT,DELETE,GET )
+body-parser (express.json)
+params or query params
+mongoose
+mongoDD crud 
+POSTMAN
+mongoose Compass
+becryptjs
+jwt
+middlware
+cors
+
+
+
+remaining topics
+.env
+nodemailer - email send
+cloudinary - for image upload
+
+
+
+

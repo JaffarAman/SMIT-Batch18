@@ -1,0 +1,27 @@
+Create Todo Application
+
+FE
+Login
+Signup
+dashboard
+create Todo
+get todo
+edit todo
+delete todo
+handle logout
+handle public or private routes
+handle Auth user
+
+BE
+create node js server using express js
+create login or signUp api
+handle password hash
+create todo CRUD
+handle JWT token
+create auth middleware
+learning query params or params
+Connect mongodB using mongoose
+mongoose schema
+validation & error handling
+cors origin
+
