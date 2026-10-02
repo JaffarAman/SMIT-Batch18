@@ -1,0 +1,9 @@
+.navLinks {
+  color: black;
+  margin: 0 30px;
+  text-decoration: underline;
+}
+
+.activeLink{
+    color: blue;
+}
