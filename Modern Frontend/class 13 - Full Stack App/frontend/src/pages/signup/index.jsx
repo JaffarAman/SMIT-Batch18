@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const BASE_URL = import.meta.env.VITE_BASE_URL
@@ -12,6 +12,9 @@ const Signup = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [isLoading, setIsLoading] = useState(false)
+
+    const navigate = useNavigate()
+
 
     const signupHandler = async (event) => {
         try {
@@ -34,6 +37,9 @@ const Signup = () => {
             // API CAll
             const response = await axios.post(`${BASE_URL}/auth/signup`, userObj)
             console.log("response", response)
+            navigate("/")
+
+
 
         } catch (error) {
             setIsLoading(false)

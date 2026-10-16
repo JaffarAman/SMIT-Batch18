@@ -3,6 +3,7 @@ import authRoute from "./routes/auth.js"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
 import cors from "cors"
+import todoRoute from "./routes/todo.js"
 dotenv.config()
 const app = express()
 
@@ -37,6 +38,7 @@ app.get("/health", (request, response) => {
 // /api/auth/signup
 
 app.use("/api/auth", authRoute)
+app.use("/api/todo" , todoRoute)
 
 
 // app.post("/api/login", (request, response) => {

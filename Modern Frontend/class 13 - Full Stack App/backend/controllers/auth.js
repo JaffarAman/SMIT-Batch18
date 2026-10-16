@@ -54,10 +54,64 @@ export const signup = async (request, response) => {
 }
 
 
-export const login = (request, response) => {
+export const login = async (request, response) => {
     try {
 
-    } catch (error) {
+        const body = request.body
+        const { email, password } = body
 
+        if (!email || !password) {
+            return response.status(400).json({
+                message: "required values are missing",
+                status: false
+            })
+        }
+
+        // check user email 
+        const user = await UserModel.findOne({ email })
+        if (!user) {
+            return response.status(400).json({
+                message: "email address not found",
+                status: false
+            })
+        }
+
+        const comparePassword = await bcrypt.compare(password, user.password)
+
+
+        if (!comparePassword) {
+            return response.status(400).json({
+                message: "email address or password not match nikal jao!",
+                status: false
+            })
+        }
+
+        if (!user.isVerified) {
+            return response.status(403).json({
+                message: "email address is not verified! Please verify your email address. check your Inbox jaaa bhai email verify krly",
+                status: false
+            })
+        }
+
+
+
+        // generate jwt token
+        const token = jwt.sign({
+            _id: user._id,
+            email: user.email
+        }, process.env.JWT_SECRET)
+
+
+        response.status(200).json({
+            message: "user login successfully",
+            status: true,
+            data: user,
+            token
+        })
+    } catch (error) {
+        response.status(500).json({
+            message: error.message || "something went wrong",
+            status: false
+        })
     }
 }

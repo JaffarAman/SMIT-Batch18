@@ -1,5 +1,7 @@
+import axios from 'axios'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { BASE_URL } from '../../config/baseUrl'
 
 const Login = () => {
 
@@ -7,26 +9,41 @@ const Login = () => {
     const [password, setPassword] = useState("")
     const [isLoading, setIsLoading] = useState(false)
 
-    const loginHandler = (event) => {
-        event.preventDefault()
+    const navigate = useNavigate()
 
-        console.log("Login Form submit!")
-        if (!email || !password) {
-            return alert("Required fields are missing!")
-        }
+    const loginHandler = async (event) => {
+        try {
+            event.preventDefault()
 
-        const userObj = {
-            email,
-            password
-        }
-        // console.log("userObj", userObj)
+            console.log("Login Form submit!")
+            if (!email || !password) {
+                return alert("Required fields are missing!")
+            }
 
-        setIsLoading(true)
-        // API CAll
-        setTimeout(() => {
+            const userObj = {
+                email,
+                password
+            }
+            // console.log("userObj", userObj)
+
+            // API CAll
+            setIsLoading(true)
+            const response = await axios.post(`${BASE_URL}/auth/login`, userObj)
+            console.log("response ", response)
             setIsLoading(false)
-            console.log("API RESPONSE")
-        }, 2000)
+            localStorage.setItem("token", response.data.token)
+            navigate("/dashboard")
+
+        } catch (error) {
+            setIsLoading(false)
+            console.log("error", error.response.status)
+            if (error.response.status == 403) {
+                // navigate otp verify screen
+                return navigate("/otpverify")
+            }
+            alert(error?.response?.data?.message || error.message)
+
+        }
 
 
     }
