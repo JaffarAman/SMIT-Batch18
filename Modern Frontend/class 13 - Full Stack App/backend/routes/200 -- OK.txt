@@ -1,0 +1,10 @@
+200 -- OK
+201 -- created
+
+400 bad request
+401 -- unAuth
+402 -- payment
+403 -- forbidden
+404 -- not found
+
+500 - internal server error

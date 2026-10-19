@@ -115,3 +115,34 @@ export const login = async (request, response) => {
         })
     }
 }
+
+
+export const getCurrentUser = async (request, response) => {
+    try {
+
+        const userId = request.userId
+        const userData = await UserModel.findById(userId)
+
+        if (!userData) {
+            return response.status(400).json({
+                message: "user not found",
+                status: false,
+                data: null,
+            })
+        }
+
+        response.status(200).json({
+            message: "user data fetch successfully",
+            status: true,
+            data: userData,
+        })
+
+    } catch (error) {
+        response.status(500).json({
+            message: error.message || "something went wrong",
+            status: false
+        })
+    }
+}
+
+

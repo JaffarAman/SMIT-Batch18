@@ -1,62 +1,71 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { BASE_URL } from '../../config/baseUrl'
+import TodoCard from '../../components/todoCard'
+import TodoForm from '../../components/todoForm'
 
 const Dashboard = () => {
 
-    const [title, setTitle] = useState("")
-    const [desc, setdesc] = useState("")
-    const [priority, setpriority] = useState("")
+
+    const [fetchLoading, setfetchLoading] = useState(false)
+    const [todos, setTodos] = useState([])
+    const [isRefresh, setIsRefresh] = useState(false) //flag
+
+    useEffect(() => {
+        fetchTodos()
+    }, [isRefresh])
 
 
-    const todoHandler = async (event) => {
+
+    const fetchTodos = async () => {
         try {
-
-            event.preventDefault()
-
-            //add condition
-
-            const body = {
-                title,
-                desc,
-                priority
-            }
-
-            const response = await axios.post(`${BASE_URL}/todo`, body, {
+            setfetchLoading(true)
+            // api call
+            const response = await axios.get(`${BASE_URL}/todo`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             })
-            console.log("todo create response", response)
+
+            console.log("fetchTodos response", response.data.data)
+            setTodos(response.data.data)
 
         } catch (error) {
-            console.log("ERror", error)
+            const message = error?.response?.data?.message || error.message || "Something went wrong!"
+            alert(message)
+        } finally {
+            setfetchLoading(false)
         }
-
     }
-
 
     return (
         <div>
             <h1>Dashboard Page</h1>
 
-            <form onSubmit={todoHandler}>
-                <input value={title} type="text" placeholder='Enter title' onChange={(e) => setTitle(e.target.value)} />
-                <input type="text" placeholder='Enter Desc'
-                    value={desc}
-                    onChange={(e) => setdesc(e.target.value)}
-                />
 
-                <select name="" id=""
-                    onChange={e => setpriority(e.target.value)}
-                >
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                </select>
+            <TodoForm
+                isRefresh={isRefresh}
+                setIsRefresh={setIsRefresh}
+            />
 
-                <button>Submit Todo</button>
-            </form>
+            {
+                fetchLoading ? <h1>loading....</h1> :
+
+                    todos.length > 0 ?
+
+                        todos.map((todo, index) => {
+                            return (
+                                <React.Fragment key={todo._id} >
+                                    <TodoCard todo={todo}
+                                        isRefresh={isRefresh}
+                                        setIsRefresh={setIsRefresh}
+
+                                    />
+                                </React.Fragment>
+                            )
+                        })
+                        : <h1>NO Records - (Todos)</h1>
+            }
 
         </div>
     )

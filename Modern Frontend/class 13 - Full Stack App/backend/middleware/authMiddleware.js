@@ -7,6 +7,7 @@ export const authMiddleware = async (req, res, next) => {
 
         if (isVerify.email) {
             req.userId = isVerify._id
+            req.email = isVerify.email
             next()
         }
 

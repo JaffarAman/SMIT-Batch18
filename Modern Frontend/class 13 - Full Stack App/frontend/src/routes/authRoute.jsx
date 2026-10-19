@@ -6,6 +6,7 @@ const AuthRoute = () => {
     return (
         !localStorage.getItem("token") ?
             <Outlet /> : <Navigate to={"/dashboard"} />
+        // <Outlet />
     )
 }
 
