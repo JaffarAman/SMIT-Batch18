@@ -12,8 +12,7 @@ const ProductPage = () => {
 
   useEffect(() => {
     (async () => {
-
-        dispatch(loadingProduct())
+      dispatch(loadingProduct());
 
       const response = await fetch("https://fakestoreapi.com/products/").then(
         (res) => res.json(),
@@ -24,14 +23,13 @@ const ProductPage = () => {
     })();
   }, []);
 
-  if(loading){
-    return <h1>LOADING...</h1>
+  if (loading) {
+    return <h1>LOADING...</h1>;
   }
 
   return (
     <div>
       <Navbar />
-
 
       {products.map((obj) => {
         return (
